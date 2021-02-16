@@ -29,7 +29,7 @@ These issues include -
 ![Screen Shot of current implementation of Joes'SS](https://i.imgur.com/CPQChfF.png)
 
 # Solution
-For my senior design project, my team solved this by implementing a new rendition of Joe'SS. To accompany the [frontend](https://github.com/dca123/Joess-Refresh-Frontend), this backend was created to provide the data. The backend is powered by Node which provides a GraphQL API. This API is consumed by the front end to poulate the React application with data. Prisma is used as an ORM between the sqlite database and the Apollo server.
+For my senior design project, my team solved this by implementing a new rendition of Joe'SS. To accompany the [frontend](https://github.com/dca123/Joess-Refresh-Frontend), this backend was created to provide the data. The backend is powered by Node which provides a GraphQL API. This API is consumed by the front end to populate the React application with data. Prisma is used as an ORM between the SQLite database and the Apollo server.
 
 # Technologies
 
@@ -41,15 +41,15 @@ For my senior design project, my team solved this by implementing a new renditio
 
 # Usage
 
-1.` npm install`
-2.  If `prisma/dev.db` does not exist
-    1.  `npx prisma migrate save --experimental`
-    2.  `npx prisma migrate up --experimental`
-    3.  `npx prisma generate`
-    4.  `node src/seed.js`
-    5.  `npx prisma studio` (Opens the prisma gui to check was data seeded properly)
-3.  `node src/index.js`
-4.  Go to  [http://localhost:4000/](http://localhost:4000/)  to access the apollo client
+ 1. ` npm install` 
+	 1. If `prisma/dev.db` does not exist  
+	 3. `npx prisma migrate save --experimental` 
+	 4.  `npx prisma migrate up --experimental`
+	 5. `npx prisma generate`  
+	 6. `node src/seed.js` 
+	 7. `npx prisma studio` (Opens the prisma gui to check was data seeded properly) 
+ 8. `node src/index.js` Go to [http://localhost:4000/](http://localhost:4000/)  to access the
+    apollo client
 
 # Examples
 
